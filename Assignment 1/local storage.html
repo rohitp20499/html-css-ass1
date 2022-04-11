@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+alert(new Date());
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = localStorage.clickcount+"<tr><td>"+new Date+"</td></tr>";
+        } else {
+            localStorage.clickcount ="<tr><td>"+new Date+"</td></tr>";
+        }
+        document.getElementById("result").innerHTML = "<table>" + localStorage.clickcount + "</table>";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+</head>
+<body>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+</body>
+</html>

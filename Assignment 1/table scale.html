@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;  
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  margin: 0 40px;
+  transition: transform 0.5s linear;
+}
+
+.tsquare1 {
+  background-color: #5BC0EB;
+}
+
+.tsquare1:hover {
+  transform: scale(0.5);
+}
+
+.square2 {
+  background-color: #FDE74C;
+}
+
+.square2:hover {
+  transform: scale(2);
+}
+
+.square3 {
+  background-color: #9BC53D;
+}
+
+.square3:hover {
+  transform: scale(0.5, 2.5);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<table class="tsquare1">
+<tr><td>one</td></tr>
+<tr><td>two</td></tr>
+<tr><td>three</td></tr>
+</table>
+  
+  <div class="square square2"></div>
+  <div class="square square3"></div>
+</div>
+</body>
+</html>

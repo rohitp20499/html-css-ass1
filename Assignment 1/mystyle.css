@@ -1,0 +1,30 @@
+.colorClass1{
+	color:red;
+}
+.colorClass2{
+	background-color:yellow;
+}
+ul{
+	color:#abcdef;	
+	background-image:url('myImg.jpg');
+}
+
+#e{
+	color:green;
+}
+
+#m{
+	color:blue;
+}
+
+#i{
+	color:red;
+}
+
+#d{
+	color:purple;
+}
+
+#s{
+	color:violet;
+}

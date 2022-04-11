@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>First Example</title>
+		<style>
+		input{
+		margin:8px;
+		}
+		</style>
+    </head>
+    <body>
+	<form action="">
+	Please enter name:<input type="text" name="text1" id="tid" title="enter first and last name" value=""/><br>
+	Password:<input type="password" name="pwd1" id="pid" value=""/><br>
+	Email:<input type="email" name="email1" id="emailid" value=""/><br>
+	URL:<input type="URL" name="URL1" id="URLid" value=""/><br>
+	Number of family members:<input type="Number" name="Number1" id="Numberid" value="" min="0" max="20"/><br>
+	Your Hobbies:<input type="checkbox" name="Hobbies" value="hobby1"/>Hobby1<br>
+	<input type="checkbox" name="Hobbies" value="hobby2"/>Hobby2<br>
+	<input type="checkbox" name="Hobbies" value="hobby3"/>Hobby3<br>
+	
+	Your Studies:<input type="radio" name="studies" value="hschool"/>High School<br>
+	<input type="radio" name="studies" value="graduate"/>Graduate<br>
+	<input type="radio" name="studies" value="pgraduate"/>Post Graduate<br>
+	
+	Upload Profile Pic:<input type="file" name="profilepic" /><br>
+	Favorate Color :<input type="color" name="favcolor" /><br>
+	
+	Select University:<select multiple>
+	<option value="University1">University1</option>
+	<option value="University2">University2</option>
+	<option value="University3">University3</option>
+	<option value="University4">University4</option>
+	</select><br>
+	Enter Aadhar Number:<input type="text" pattern="[0-9]{12}" name="adnumber" value="" placeholder="" /><br>
+	Enter PAN Number:<input type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" name="adnumber" value="" placeholder="" /><br>
+	About yourself:<textarea rows="5" cols="10" name="about" ></textarea><br>
+	
+	
+	<input type="submit" value="Submit"/>&nbsp;&nbsp;<input type="reset" value="Reset"/>
+       </form> 
+    </body>
+    </html>
